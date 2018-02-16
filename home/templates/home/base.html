@@ -42,65 +42,37 @@
       </div>
     </header>
 
-	<nav class="navbar navbar-expand-lg navbar-light">
-		<a class="navbar-brand" href=""></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-			<ul class="navbar-nav">
-				<li class="nav-item">
-					<a class="nav-link" href="#">Présentation</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Historique</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Services</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Contact</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Liens utiles</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-
-		<div class="container-fluid">
-			<div class="row">
-				<img class="img-fluid mb-5" src="business.jpeg" alt="business"/>
-			</div>
-		</div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Présentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Historique</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Liens utiles</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     {% block presentation %}
     {% endblock %}
 
-    <section id=history>
-      {% block history %}{% endblock %}
-    </section>
-
-    <section id=service>
-      {% block servce %}{% endblock %}
-    </section>
-
-    <section id=contact>
-      {% block contact %}{% endblock %}
-    </section>
-
-    <section id=link>
-      {% block link %}{% endblock %}
-    </section>
-
-    <footer>
-      <div class="social">
-        <a>facebook</a>
-        <a>linkedin</a>
-      </div>
-      <div class="copy">
-        &copy; Cofiren. Tous droits réservés.
-      </div>
-    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
