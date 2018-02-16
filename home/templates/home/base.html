@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Cofiren CSS -->
+    <link rel="stylesheet" href="style.css"></link>
+
+    <title>Cofiren - Expert-Comptable et Conseil Fiscal</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row justify-content-between">
+          <a class="col-md-8" href="#cofiren.be"><img class="img-fluid" src="logo.png" alt="Cofiren Logo"/></a>
+          <div class="col-md-4">
+            <div class="row justify-content-end">
+              <ul id="language" class="nav">
+                <li class="nav-item border border-primary"><a class="nav-link" href="#FR">FR</a></li>
+                <li class="nav-item border border-primary"><a class="nav-link" href="#NL">NL</a></li>
+                <li class="nav-item border border-primary"><a class="nav-link" href="#EN">EN</a></li>
+                <li class="nav-item border border-primary"><a class="nav-link" href="#IT">IT</a></li>
+              </ul>
+            </div>
+            <div class="row justify-content-end">
+              <p>
+                Nous contacter :
+                <a href="tel:003226465020">+3226465020</a> -
+                <a href="mailto:cofiren@cofiren.be">cofiren@cofiren.be</a> -
+                <a href="#google-plus"><img src="google-plus.png" class="img-fluid" alt="GooglePlus"/></a> -
+                <a href="#facebook"><img src="facebook.png" class="img-fluid" alt="Facebook"/></a> -
+                <a href="#linkedin"><img src="linkedin.png" class="img-fluid" alt="LinkedIn"/></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <ul id="nav" class="nav sticky-top justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" href="#presentation">Présentation</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#historique">Historique</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#lien">Liens utiles</a>
+      </li>
+    </ul>
+
+		<div class="container-fluid">
+			<div class="row">
+				<img class="img-fluid mb-5" src="business.jpeg" alt="business"/>
+			</div>
+		</div>
+
+    {% block presentation %}
+    {% endblock %}
+
+    <section id=history>
+      {% block history %}{% endblock %}
+    </section>
+
+    <section id=service>
+      {% block servce %}{% endblock %}
+    </section>
+
+    <section id=contact>
+      {% block contact %}{% endblock %}
+    </section>
+
+    <section id=link>
+      {% block link %}{% endblock %}
+    </section>
+
+    <footer>
+      <div class="social">
+        <a>facebook</a>
+        <a>linkedin</a>
+      </div>
+      <div class="copy">
+        &copy; Cofiren. Tous droits réservés.
+      </div>
+    </footer>
+  </body>
+</html>
