@@ -1,0 +1,44 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block presentation %}
+<div class="container">
+  <p class="text-justify">
+    <strong>« Cofiren »</strong> est active dans le domaine de <strong>l’Expertise Comptable et Fiscale</strong> depuis 1970. Elle a ainsi logiquement suivi l’évolution
+    du secteur vers le <strong>conseil</strong>.
+    Nous nous appuyons donc sur une solide <strong>expérience</strong> afin de répondre au mieux aux exigences de nos Partenaires et de leur
+    proposer des <strong>services de qualité</strong>.
+    Les femmes et les hommes qui œuvrent au sein de la fiduciaire aiment leur métier et s’appuient sur une formation comptable
+    supérieure.
+    Dans cette même optique d’<strong>exigences</strong> et de <strong>connaissances</strong>, les collaborateurs bénéficient d’une <strong>formation constante</strong> et
+    d’équipements informatiques à la pointe de la technologie.
+    Notre position de consultant permet une <strong>indépendance</strong> et une neutralité indispensables afin de privilégier, en toute objectivité,
+    <strong>l’intérêt de nos Partenaires</strong>.
+    Notre pragmatisme nous engage à apporter des <strong>solutions concrètes et réalistes</strong> dont nous suivons la mise en œuvre et la
+    réalisation.
+    Cette méthodologie de travail est indispensable afin de pérenniser une <strong>relation de confiance</strong> entre le Partenaire et la fiduciaire.
+    <strong>Polyvalents</strong>, nous sommes bien placés pour éclairer les choix de l’entrepreneur dans ses <strong>projets</strong> et faire, avec lui, la synthèse des
+    contraintes humaines, comptables, financières, juridiques et fiscales auxquelles il est confronté.
+    Dans la mesure où cela se justifie, des <strong>collaborations</strong> sont nouées avec d’autres professionnels, tels qu’avocats, notaires, autres
+    professionnels du chiffre,... A cet effet, nous sommes membre du <strong>groupe multidisciplinaire</strong> Phoenix Union geie.
+  </p>
+  <div class="row justify-content-around">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="{% static "img/avatar.png" %}" alt="avatar" />
+      <div class="card-body">
+        <h5 class="card-title">STRUGLIA Alberto R.</h5>
+        <p class="card-text text-center">Expert-comptable externe<br />Conseil fiscal externe<br />Membre I.E.C. n° 7395 2 F 48</p>
+        <a href="#linkedinavatar" class="btn btn-primary">LinkedIn</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="{% static "img/avatar.png" %}" alt="avatar" />
+      <div class="card-body">
+        <h5 class="card-title">STRUGLIA Stefano</h5>
+        <p class="card-text text-center">Comptable externe<br />Stagiaire Expert-Comptable et Conseil fiscal externe</p>
+        <a href="#linkedinavatar" class="btn btn-primary">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock presentation %}
