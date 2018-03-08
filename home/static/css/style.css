@@ -1,3 +1,20 @@
+#communication a:link {
+   text-decoration: none;
+   color: #002060;
+}
+
+#communication a:visited {
+   text-decoration: none;
+}
+
+#communication a:hover {
+   text-decoration: underline;
+}
+
+#communication a:active {
+   text-decoration: underline;
+}
+
 .navbar-collapse {
   text-align: center;
 }
