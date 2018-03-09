@@ -1,18 +1,31 @@
-#communication a:link {
-   text-decoration: none;
-   color: #002060;
+.material-icons.nav-phone
+{
+	color: #002060;
+	font-size: 24px;
 }
 
-#communication a:visited {
-   text-decoration: none;
+.material-icons.nav-mail
+{
+	color: #002060;
+	font-size: 24px;
 }
 
-#communication a:hover {
-   text-decoration: underline;
+.material-icons.contact-phone
+{
+	color: #002060;
+	font-size: 18px;
 }
 
-#communication a:active {
-   text-decoration: underline;
+.material-icons.contact-mail
+{
+	color: #002060;
+	font-size: 18px;
+}
+
+.btn.send-btn
+{
+	background-color: #002060;
+	color: #ecf0f1;
 }
 
 .navbar-collapse {
@@ -83,3 +96,4 @@
 .navbar .navbar-link:hover {
   color: #ecf0f1;
 }
+
