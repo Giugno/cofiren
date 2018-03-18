@@ -1,8 +1,28 @@
+body
+{
+	background-color: #F4F4F4;
+}
+
+.header
+{
+	background-color: #F4F4F4;
+}
+
+/* button */
+
 .btn.linkedin-btn
 {
 	background-color: #002060;
 	color: #ecf0f1;
 }
+
+.btn.send-btn
+{
+	background-color: #002060;
+	color: #ecf0f1;
+}
+
+/* icon */
 
 .material-icons.nav-phone
 {
@@ -28,19 +48,10 @@
 	font-size: 18px;
 }
 
-.btn.send-btn
-{
-	background-color: #002060;
-	color: #ecf0f1;
-}
+/* css nav */
 
 .navbar-collapse {
   text-align: center;
-}
-
-.header
-{
-	background-color : #FFFFFF;
 }
 
 .navbar {
