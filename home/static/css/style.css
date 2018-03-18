@@ -1,3 +1,9 @@
+.btn.linkedin-btn
+{
+	background-color: #002060;
+	color: #ecf0f1;
+}
+
 .material-icons.nav-phone
 {
 	color: #002060;
@@ -96,4 +102,3 @@
 .navbar .navbar-link:hover {
   color: #ecf0f1;
 }
-
