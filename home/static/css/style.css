@@ -8,6 +8,19 @@ body
 	background-color: #F4F4F4;
 }
 
+/* services */
+
+.services
+{
+	border: 3px solid;
+	color : #002060;
+}
+
+.services h4
+{
+	text-align: center;
+}
+
 /* button */
 
 .btn.linkedin-btn
