@@ -1,13 +1,33 @@
 /* button linkedin */
 
-.btn.linkedin-btn
-{
+.btn.linkedin-btn {
 	background-color: #002060;
 	color: #ecf0f1;
 }
 
-.btn.send-btn
-{
+.btn.send-btn {
 	background-color: #002060;
 	color: #ecf0f1;
+}
+
+/* image */
+
+.business {
+	display: none;
+}
+
+/* texte */
+
+.text {
+	margin-top: 1rem;
+}
+
+@media (min-width: 576px) {
+
+	/* image */
+
+	.business {
+		display: block;
+	}
+
 }

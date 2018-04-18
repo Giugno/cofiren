@@ -1,35 +1,29 @@
-body
-{
+body {
 	background-color: #F4F4F4;
 }
 
-.header
-{
+.header {
 	background-color: #F4F4F4;
 }
 
 /* icon */
 
-.material-icons.nav-phone
-{
+.material-icons.nav-phone {
 	color: #002060;
 	font-size: 1.5rem;
 }
 
-.material-icons.nav-mail
-{
+.material-icons.nav-mail {
 	color: #002060;
 	font-size: 1.5rem;
 }
 
-.material-icons.contact-phone
-{
+.material-icons.contact-phone {
 	color: #002060;
 	font-size: 1.125;
 }
 
-.material-icons.contact-mail
-{
+.material-icons.contact-mail {
 	color: #002060;
 	font-size: 1.125;
 }

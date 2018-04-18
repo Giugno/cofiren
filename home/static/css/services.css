@@ -1,18 +1,22 @@
-.services
-{
+.services {
 	border: 0.3rem solid;
 	color : #002060;
+  margin : 1rem;
 }
 
-.services h4
-{
+.services h4 {
 	text-align: center;
 }
 
-@media only screen and (min-width: 576px) {
+@media (min-width: 992px) {
 
-	.services:hover {
+  .services:hover {
 		transform: scale(1.1);
 	}
+
+  .services {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 
 }
