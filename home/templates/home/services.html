@@ -1,4 +1,7 @@
 {% extends 'home/base.html' %}
+{% load static %}
+
+{% block css %}<link rel="stylesheet" href="{% static "css/services.css" %}"></link>{% endblock %}
 
 {% block services %}
 <div class="container-fluid mt-5">

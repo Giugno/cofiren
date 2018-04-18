@@ -8,60 +8,33 @@ body
 	background-color: #F4F4F4;
 }
 
-/* services */
-
-.services
-{
-	border: 3px solid;
-	color : #002060;
-}
-
-.services h4
-{
-	text-align: center;
-}
-
-/* button */
-
-.btn.linkedin-btn
-{
-	background-color: #002060;
-	color: #ecf0f1;
-}
-
-.btn.send-btn
-{
-	background-color: #002060;
-	color: #ecf0f1;
-}
-
 /* icon */
 
 .material-icons.nav-phone
 {
 	color: #002060;
-	font-size: 24px;
+	font-size: 1.5rem;
 }
 
 .material-icons.nav-mail
 {
 	color: #002060;
-	font-size: 24px;
+	font-size: 1.5rem;
 }
 
 .material-icons.contact-phone
 {
 	color: #002060;
-	font-size: 18px;
+	font-size: 1.125;
 }
 
 .material-icons.contact-mail
 {
 	color: #002060;
-	font-size: 18px;
+	font-size: 1.125;
 }
 
-/* css nav */
+/* nav */
 
 .navbar-collapse {
   text-align: center;

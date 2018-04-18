@@ -1,0 +1,18 @@
+.services
+{
+	border: 0.3rem solid;
+	color : #002060;
+}
+
+.services h4
+{
+	text-align: center;
+}
+
+@media only screen and (min-width: 576px) {
+
+	.services:hover {
+		transform: scale(1.1);
+	}
+
+}
