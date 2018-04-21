@@ -8,6 +8,14 @@
 	text-align: center;
 }
 
+.notfar{
+	-webkit-transform:perspective(100) rotateX(-45deg);
+	background-color:#333;
+	margin:10px auto;
+	width:200px;
+	height:100px;
+}
+
 @media (min-width: 992px) {
 
   .services:hover {
