@@ -1,0 +1,56 @@
+/* send button */
+
+.send-btn {
+	background-color: #002060;
+	color: #ecf0f1;
+}
+
+/* icons */
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+/* information link */
+
+.phone-link {
+  color: #3465ab;
+  text-decoration: none;
+}
+
+.phone-link:link {
+  text-decoration: none;
+}
+
+.phone-link:visited {
+    text-decoration: none;
+}
+
+.phone-link:hover {
+  text-decoration: none;
+}
+
+.phone-link:active {
+  text-decoration: none;
+}
+
+.mail-link {
+  color: #3465ab;
+  text-decoration: none;
+}
+
+.mail-link:link {
+  text-decoration: none;
+}
+
+.mail-link:visited {
+    text-decoration: none;
+}
+
+.mail-link:hover {
+  text-decoration: none;
+}
+
+.mail-link:active {
+  text-decoration: none;
+}
