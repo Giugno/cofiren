@@ -1,18 +1,14 @@
 body {
      background-color: #F4F4F4;
 }
- .header {
+.header {
      background-color: #F4F4F4;
 }
- .footer.row {
-     background-color: #002060;
-}
- .footer p {
-     color : #ecf0f1;
-		 font-size: 18px
+.footer p {
+     font-size: 10px;
 }
  .material-icons.md-18 {
-     font-size: 18px;
+     font-size: 10px;
 }
 
 .copyright {
