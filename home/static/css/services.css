@@ -8,6 +8,14 @@
 	text-align: center;
 }
 
+.mobile-format {
+  display: block;
+}
+
+.desktop-format {
+  display: none;
+}
+
 @media (min-width: 992px) {
 
   .services:hover {
@@ -17,6 +25,22 @@
   .services {
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+
+  .mobile-format {
+    display: none;
+  }
+
+  .desktop-format {
+    display: block;
+  }
+
+  .cofiren-logo {
+    margin-top: 5rem;
+  }
+
+  .hexa:hover {
+    transform: scale(1.1);  
   }
 
 }
