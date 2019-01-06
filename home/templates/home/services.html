@@ -1,150 +1,180 @@
 {% extends 'home/base.html' %}
 {% load static %}
 
-{% block css %}<link rel="stylesheet" href="{% static "css/services.css" %}"></link>{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static "css/services.css" %}">
+</link>{% endblock %}
 
 {% block services %}
-<div class="desktop-format container-fluid">
-  <div class="row">
-    <div class="col-4">
-        <div class="row">
-          <img class="hexa img-fluid m-3" src="{% static "img/fiscalite.svg" %}" alt="fiscalite" width="200rem" height="200rem"/>
-          <img class="hexa img-fluid m-3" src="{% static "img/expertise.svg" %}" alt="expertise" width="200rem" height="200rem"/>
-        </div>
-        <div class="row">
-          <img class="hexa img-fluid m-3" src="{% static "img/comptabilite.svg" %}" alt="comptabilite" width="200rem" height="200rem"/>
-          <img class="hexa img-fluid m-3" src="{% static "img/juridique.png" %}" alt="juridique" width="200rem" height="200rem"/>
-        </div>
-        <div class="row">
-          <img class="hexa img-fluid m-3" src="{% static "img/gestion.svg" %}" alt="gestion" width="200rem" height="200rem"/>
-          <img class="hexa img-fluid m-3" src="{% static "img/organisation.png" %}" alt="organisation" width="200rem" height="200rem"/>
-        </div>
-    </div>
-    <div class="col">
-      <img class="cofiren-logo img-fluid" src="{% static "img/cofiren-logo.svg" %}" alt="Logo" width="400rem" height="400rem"/>
-    </div>
+
+<div id="desktop-format">
+  <div class="col-services">
+    <a href="javascript:visibilite('fiscalite');javascript:invisibilite('expertise');javascript:invisibilite('comptabilite');javascript:invisibilite('juridique');javascript:invisibilite('gestion');javascript:invisibilite('organisation');">
+      <img class="hexa img-fluid m-3" src="{% static "img/fiscalite.svg" %}" alt="fiscalite" width="200px" />
+    </a>
+    <a href="javascript:visibilite('comptabilite');javascript:invisibilite('expertise');javascript:invisibilite('fiscalite');javascript:invisibilite('juridique');javascript:invisibilite('gestion');javascript:invisibilite('organisation');">
+      <img class="hexa img-fluid m-3" src="{% static "img/comptabilite.svg" %}" alt="comptabilite" width="200px" />
+    </a>
+    <a href="javascript:visibilite('gestion');javascript:invisibilite('expertise');javascript:invisibilite('comptabilite');javascript:invisibilite('juridique');javascript:invisibilite('fiscalite');javascript:invisibilite('organisation');">
+      <img class="hexa img-fluid m-3" src="{% static "img/gestion.svg" %}" alt="gestion" width="200px" />
+    </a>
   </div>
-</div>
-<div class="mobile-format container-fluid">
-  <div class="row d-flex justify-content-around">
-    <div class="col-lg-5 services">
-      <h4>EXPERTISE</h4>
-      <ul>
-        <li>
-          Transformation de sociétés
-        </li>
-        <li>
-          Fusion/scission de sociétés
-        </li>
-        <li>
-          Liquidation/dissolution de sociétés
-        </li>
-        <li>
-          Augmentation/diminution de capital
-        </li>
-        <li>
-          Modifications aux status
-        </li>
-      </ul>
-    </div>
-    <div class="col-lg-5 services">
-      <h4>COMPTABILITE</h4>
-      <ul>
-        <li>
-          Tenue et contrôle de la compatibilité
-        </li>
-        <li>
-          Établissement des comptes annuels
-        </li>
-        <li>
-          Établissement de situations périodiques
-        </li>
-      </ul>
-    </div>
+  <div class="col-services">
+    <a href="javascript:visibilite('expertise');javascript:invisibilite('fiscalite');javascript:invisibilite('comptabilite');javascript:invisibilite('juridique');javascript:invisibilite('gestion');javascript:invisibilite('organisation');">
+      <img class="hexa img-fluid m-3" src="{% static "img/expertise.svg" %}" alt="expertise" width="200px" />
+    </a>
+    <a href="javascript:visibilite('juridique');javascript:invisibilite('expertise');javascript:invisibilite('comptabilite');javascript:invisibilite('fiscalite');javascript:invisibilite('gestion');javascript:invisibilite('organisation');">
+      <img class="hexa img-fluid m-3" src="{% static "img/juridique.svg" %}" alt="juridique" width="200px" />
+    </a>
+    <a href="javascript:visibilite('organisation');javascript:invisibilite('expertise');javascript:invisibilite('comptabilite');javascript:invisibilite('juridique');javascript:invisibilite('gestion');javascript:invisibilite('fiscalite');">
+      <img class="hexa img-fluid m-3" src="{% static "img/organisation.svg" %}" alt="organisation" width="200px" />
+    </a>
   </div>
-  <div class="row d-flex justify-content-around">
-    <div class="col-lg-5 services">
+  <div id="cofiren-logo">
+    <img class="cofiren-logo img-fluid" src="{% static "img/cofiren-logo.svg" %}" alt="Logo" width="500px" />
+  </div>
+  <div id="description">
+    <div id="fiscalite" style="display: none;">
       <h4>FISCALITE</h4>
       <ul>
-        <li>
-          Établissement des déclarations fiscales et annexes (IPP, ISOC, INR, IPM)
-        </li>
-        <li>
-          Établissement des déclarations et listings TVA
-        </li>
-        <li>
-          Établissement des déclarations intracommunautaires
-        </li>
-        <li>
-          Assistance aux contrôles discaux et de TVA
-        </li>
-        <li>
-          Assistance et suivi du contentieux
-        </li>
-        <li>
-          Établissement de situations fiscales
-        </li>
+        <li>Établissement des déclarations fiscales et annexes (IPP, ISOC, INR, IPM)</li>
+        <li>Établissement des déclarations et listings TVA</li>
+        <li>Établissement des déclarations intracommunautaires</li>
+        <li>Assistance aux contrôles discaux et de TVA</li>
+        <li>Assistance et suivi du contentieux</li>
+        <li>Établissement de situations fiscales</li>
       </ul>
     </div>
-    <div class="col-lg-5 services">
-      <h4>JURIDIQUE</h4>
+    <div id="comptabilite" style="display: none;">
+      <h4>COMPTABILITE</h4>
       <ul>
-        <li>
-          Constituation de sociétés (forme, capital, objet social, plan financier,...)
-        </li>
-        <li>
-          Analyse de faisabilité/opportunité du passage en société
-        </li>
-        <li>
-          Aide à l'établissement des rapport de gestion, procès-verbaux des assemblées générales
-        </li>
-        <li>
-          Droits successoraux
-        </li>
-        <li>
-          Droit des affaires
-        </li>
-        <li>
-          Contrôle de l'application du Code des Sociétés
-        </li>
+        <li>Tenue et contrôle de la compatibilité</li>
+        <li>Établissement des comptes annuels</li>
+        <li>Établissement de situations périodiques</li>
       </ul>
     </div>
-  </div>
-  <div class="row d-flex justify-content-around">
-    <div class="col-lg-5 services">
-      <h4>ORGANISATION</h4>
-      <ul>
-        <li>
-          Mise en place de méthodes et procédures
-        </li>
-        <li>
-          Évaluation du contrôle interne
-        </li>
-      </ul>
-    </div>
-    <div class="col-lg-5 services">
+    <div id="gestion" style="display: none;">
       <h4>GESTION</h4>
       <ul>
-        <li>
-          Étude et suivi budgétaire
-        </li>
-        <li>
-          Établissement de tableaux de bord
-        </li>
-        <li>
-          Analyse financière et ratios (rentabilité, liquidité, solvabilité,...)
-        </li>
-        <li>
-          Analyse des coûts
-        </li>
-        <li>
-          Plan de développements
-        </li>
-        <li>
-          Analyse d'opérations (investissements, rachat de parts,...)
-        </li>
+        <li>Étude et suivi budgétaire</li>
+        <li>Établissement de tableaux de bord</li>
+        <li>Analyse financière et ratios (rentabilité, liquidité, solvabilité,...)</li>
+        <li>Analyse des coûts</li>
+        <li>Plan de développements</li>
+        <li>Analyse d'opérations (investissements, rachat de parts,...)</li>
+      </ul>
+    </div>
+    <div id="expertise" style="display: none;">
+      <h4>EXPERTISE</h4>
+      <ul>
+        <li>Transformation de sociétés</li>
+        <li>Fusion/scission de sociétés</li>
+        <li>Liquidation/dissolution de sociétés</li>
+        <li>Augmentation/diminution de capital</li>
+        <li>Modifications aux status</li>
+      </ul>
+    </div>
+    <div id="juridique" style="display: none;">
+      <h4>JURIDIQUE</h4>
+      <ul>
+        <li>Constituation de sociétés (forme, capital, objet social, plan financier,...)</li>
+        <li>Analyse de faisabilité/opportunité du passage en société</li>
+        <li>Aide à l'établissement des rapport de gestion, procès-verbaux des assemblées générales</li>
+        <li>Droits successoraux</li>
+        <li>Droit des affaires</li>
+        <li>Contrôle de l'application du Code des Sociétés</li>
+      </ul>
+    </div>
+    <div id="organisation" style="display: none;">
+      <h4>ORGANISATION</h4>
+      <ul>
+        <li>Mise en place de méthodes et procédures</li>
+        <li>Évaluation du contrôle interne</li>
       </ul>
     </div>
   </div>
 </div>
+
+<div id="mobile-format">
+  <div>
+    <div>
+      <h4>FISCALITE</h4>
+      <ul>
+        <li>Établissement des déclarations fiscales et annexes (IPP, ISOC, INR, IPM)</li>
+        <li>Établissement des déclarations et listings TVA</li>
+        <li>Établissement des déclarations intracommunautaires</li>
+        <li>Assistance aux contrôles discaux et de TVA</li>
+        <li>Assistance et suivi du contentieux</li>
+        <li>Établissement de situations fiscales</li>
+      </ul>
+    </div>
+    <div>
+      <h4>COMPTABILITE</h4>
+      <ul>
+        <li>Tenue et contrôle de la compatibilité</li>
+        <li>Établissement des comptes annuels</li>
+        <li>Établissement de situations périodiques</li>
+      </ul>
+    </div>
+    <div>
+      <h4>GESTION</h4>
+      <ul>
+        <li>Étude et suivi budgétaire</li>
+        <li>Établissement de tableaux de bord</li>
+        <li>Analyse financière et ratios (rentabilité, liquidité, solvabilité,...)</li>
+        <li>Analyse des coûts</li>
+        <li>Plan de développements</li>
+        <li>Analyse d'opérations (investissements, rachat de parts,...)</li>
+      </ul>
+    </div>
+    <div>
+      <h4>EXPERTISE</h4>
+      <ul>
+        <li>Transformation de sociétés</li>
+        <li>Fusion/scission de sociétés</li>
+        <li>Liquidation/dissolution de sociétés</li>
+        <li>Augmentation/diminution de capital</li>
+        <li>Modifications aux status</li>
+      </ul>
+    </div>
+    <div>
+      <h4>JURIDIQUE</h4>
+      <ul>
+        <li>Constituation de sociétés (forme, capital, objet social, plan financier,...)</li>
+        <li>Analyse de faisabilité/opportunité du passage en société</li>
+        <li>Aide à l'établissement des rapport de gestion, procès-verbaux des assemblées générales</li>
+        <li>Droits successoraux</li>
+        <li>Droit des affaires</li>
+        <li>Contrôle de l'application du Code des Sociétés</li>
+      </ul>
+    </div>
+    <div>
+      <h4>ORGANISATION</h4>
+      <ul>
+        <li>Mise en place de méthodes et procédures</li>
+        <li>Évaluation du contrôle interne</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  function visibilite(thingId) {
+    var targetElement;
+    targetElement = document.getElementById(thingId);
+    if (targetElement.style.display == "none") {
+      targetElement.style.display = "";
+    } else if (targetElement.style.display == "") {
+      targetElement.style.display = "none";
+    }
+  }
+
+  function invisibilite(thingId) {
+    var targetElement;
+    targetElement = document.getElementById(thingId);
+    if (targetElement.style.display == "") {
+      targetElement.style.display = "none";
+    }
+  }
+</script>
 {% endblock services %}
