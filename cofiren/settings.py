@@ -23,8 +23,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'q8dc+m=4vi&&v)fy(3=zdm3@#=h1kl703w-$cy-25&6dz2$u*%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
 
+# dev
+DEBUG = True
+
+# prod
+'''
+DEBUG = False
 ALLOWED_HOSTS = ['127.0.0.1', 'cofiren.cleverapps.io']
 
 X_FRAME_OPTIONS = 'DENY'
@@ -36,6 +41,7 @@ SECURE_CONTENT_TYPE_NOSNIFF = True
 SECURE_HSTS_SECONDS = True
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_HSTS_PRELOAD = True
+'''
 
 # Application definition
 
@@ -128,3 +134,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, os.getenv("STORAGE_MEDIA"))
+STATIC_ROOT = os.path.join(BASE_DIR, os.getenv("STORAGE_STATIC"))
+MEDIA_URL = "https://" +  os.getenv("FRONT_DOMAIN") + os.getenv("STORAGE_MEDIA")
+STATIC_URL = "https://" +  os.getenv("FRONT_DOMAIN") + os.getenv("STORAGE_STATIC")
+SITES["front"]["scheme"] = os.getenv("HTTP_SCHEMA")
+SITES["front"]["domain"] = os.getenv("FRONT_DOMAIN")
+SECRET_KEY = os.getenv("SECRET")
