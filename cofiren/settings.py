@@ -25,10 +25,9 @@ SECRET_KEY = 'q8dc+m=4vi&&v)fy(3=zdm3@#=h1kl703w-$cy-25&6dz2$u*%'
 # SECURITY WARNING: don't run with debug turned on in production!
 
 # dev
-DEBUG = True
+#DEBUG = True
 
 # prod
-'''
 DEBUG = False
 ALLOWED_HOSTS = ['127.0.0.1', 'cofiren.cleverapps.io']
 
@@ -41,7 +40,6 @@ SECURE_CONTENT_TYPE_NOSNIFF = True
 SECURE_HSTS_SECONDS = True
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_HSTS_PRELOAD = True
-'''
 
 # Application definition
 
